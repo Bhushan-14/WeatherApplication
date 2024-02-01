@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
             .baseUrl("https://api.openweathermap.org/data/2.5/")
             .build().create(ApiInterface::class.java)
 
-        val apiKey = "aeab6bfbd67f5adcdacf49adad14a984"
+        val apiKey = "your_api_key"
         val units = "metric"
 
         val response = retrofit.getWeatherData(cityName, apiKey, units)
